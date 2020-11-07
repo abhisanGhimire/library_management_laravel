@@ -18,7 +18,5 @@ class TestController extends Controller
         //dd($decoded_info); //To get all info uncomment the line
         //dump and die the number of positive cases
         dd($decoded_info->tested_positive);
-        dd();//Lekhey
-        dd();//esma arko cha
     }
 }
