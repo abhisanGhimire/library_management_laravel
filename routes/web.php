@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-//Test Route
-Route::get('/test','TestController@index');
+Route::get('/','ISBNController@index')->name('isbn.index');
+
+Route::post('/isbn','ISBNController@store')->name('isbn.store');
+
