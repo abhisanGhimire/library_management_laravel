@@ -15,6 +15,8 @@ class TestController extends Controller
         $response = $request->getBody();
         //Response lai decode garyo
         $decoded_info=json_decode($response);
+        dd("test");
+        //Added test comment
         //dd($decoded_info); //To get all info uncomment the line
         //dump and die the number of positive cases
         dd($decoded_info->tested_positive);
